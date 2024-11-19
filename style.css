@@ -27,3 +27,15 @@ padding-bottom: 20px; /* Bottom padding */
 padding-left: 20px;    /* Left padding */
 text-align: center;
 }
+button{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    align-content: center;
+}
+button:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.05); 
+}
