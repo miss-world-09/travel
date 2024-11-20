@@ -39,3 +39,17 @@ button:hover{
     color: black;
     transform: scale(1.05); 
 }
+#new section{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: auto;
+}
+#new section button{
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
