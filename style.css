@@ -67,3 +67,8 @@ p{
 button{
     align-items: center;
 }
+#about{
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+}
