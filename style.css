@@ -72,3 +72,25 @@ button{
     background-color: aliceblue;
     text-align: center;
 }
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__description {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    color: #555;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__social:hover {
+    color: #007bff; /* Change to desired hover color */
+}
