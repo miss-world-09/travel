@@ -94,3 +94,42 @@ button{
 .footer__social:hover {
     color: #007bff; /* Change to desired hover color */
 }
+#activities {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.activity-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Makes the layout responsive */
+    gap: 20px; /* Adds spacing between the cards */
+}
+
+.activity {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To ensure border-radius applies to images */
+    padding: 10px;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.activity h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.activity p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px;
+}
