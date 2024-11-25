@@ -17,15 +17,14 @@ button{
     
 }
 #maldivess{
-    background-color: aliceblue;
-    display: flex;
-    color: black;
-    padding: 20px;
-    padding-top: 300px;    /* Top padding */
-padding-right: 20px;  /* Right padding */
-padding-bottom: 20px; /* Bottom padding */
-padding-left: 20px;    /* Left padding */
-text-align: center;
+        display: flex;
+        justify-content: center;    /* Center text horizontally */
+        align-items: flex-start;   /* Position text at the top */
+        height: 300px;             /* Set the height of the section */
+        background-color: aliceblue;
+        text-align: center;        /* Center text within the element */
+        padding-top: 20px;         /* Add space from the top */
+
 }
 button{
     background-color: aliceblue;
