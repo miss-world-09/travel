@@ -17,21 +17,27 @@ button{
     
 }
 #maldivess{
-        display: flex;
-        justify-content: center;    /* Center text horizontally */
-        align-items: flex-start;   /* Position text at the top */
-        height: 300px;             /* Set the height of the section */
-        background-color: aliceblue;
-        text-align: center;        /* Center text within the element */
-        padding-top: 20px;         /* Add space from the top */
+    display: flex;
+    justify-content: center;    /* Centers the content horizontally */
+    align-items: center;       /* Centers the content vertically */
+    height: 300px;             /* Adjust height as needed */
+    background-color: aliceblue;
+    text-align: center;
+    flex-direction: column;
 
 }
-button{
+#maldivess  button{
+   
+    margin-top: 20px;          /* Adds space between heading and button */
     background-color: aliceblue;
     color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1);
-    align-content: center;
+    border-radius: 5px;        /* Optional: Rounded corners */
+    transition: transform 0.2s; /* Adds a hover animation */
+       
 }
 button:hover{
     background-color: aqua;
