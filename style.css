@@ -40,22 +40,30 @@ button{
        
 }
 button:hover{
-    background-color: aqua;
+    background-color: rgb(70, 228, 228);
     color: black;
     transform: scale(1.05); 
 }
 #new section{
-    background-color: aqua;
+    display: flex;               /* Enables Flexbox layout */
+    flex-direction: column;      /* Ensures content stacks vertically */
+    justify-content: center;     /* Centers content vertically */
+    align-items: center;         /* Centers content horizontally */
+    height: 200px;               /* Set the height of the section */
+    background-color: aqua;      /* Section background color */
     color: black;
     text-align: center;
-    padding: auto;
+
 }
 #new section button{
     background-color: aliceblue;
     color: black;
     padding: 10px 20px;
     border: none;
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    border-radius: 5px;  
     
 }
 #contact us button{
