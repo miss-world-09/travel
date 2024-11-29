@@ -107,11 +107,6 @@ button{
 .footer__social:hover {
     color: #007bff; /* Change to desired hover color */
 }
-#activities {
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
 .activity-container {
     display: flex;
     justify-content: space-around;
@@ -120,19 +115,22 @@ button{
 }
 
 .activity {
-    width: 30%;
+    width: 30%; /* Adjust card width */
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* To ensure border-radius applies to images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for visibility */
+    overflow: hidden; /* Ensure border-radius applies to images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
     padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .activity img {
-    width: 100%;
+    width: 100%; /* Make images responsive */
     height: auto;
     border-bottom: 2px solid #ddd;
+    transition: transform 0.3s ease; /* Image zoom effect on hover */
 }
 
 .activity h3 {
@@ -145,4 +143,62 @@ button{
     font-size: 1rem;
     color: #555;
     padding: 0 10px;
+}
+
+/* Hover effects */
+.activity:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.activity:hover img {
+    transform: scale(1.1); /* Zoom the image on hover */
+}
+
+.activity:hover h3 {
+    color: #007bff; /* Change title color on hover */
+}
+
+.activity:hover p {
+    color: #333; /* Darken text color on hover */
+}
+
+#tips {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: space-around; /* Space between the boxes */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Add spacing between the boxes */
+}
+
+.tip {
+    width: 30%; /* Adjust width of each box */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+    padding: 20px; /* Add some padding inside the boxes */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: transform 0.2s ease-in-out; /* Add hover effect */
+}
+
+.tip h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tip:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add a stronger shadow on hover */
 }
