@@ -202,3 +202,59 @@ button{
     transform: scale(1.05); /* Slightly enlarge the box on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add a stronger shadow on hover */
 }
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Makes the layout responsive */
+    gap: 20px; /* Adds spacing between the cards */
+}
+
+.home {
+    width: 30%; /* Adjust card width */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for visibility */
+    overflow: hidden; /* Ensure border-radius applies to images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.home img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    transition: transform 0.3s ease; /* Image zoom effect on hover */
+}
+
+.home h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Hover effects */
+.home:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.home:hover img {
+    transform: scale(1.1); /* Zoom the image on hover */
+}
+
+.home:hover h3 {
+    color: #007bff; /* Change title color on hover */
+}
+
+.home:hover p {
+    color: #333; /* Darken text color on hover */
+}
+
