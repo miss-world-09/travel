@@ -136,19 +136,19 @@ button{
 .activity h3 {
     margin: 10px 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #007bff;
 }
 
 .activity p {
     font-size: 1rem;
-    color: #555;
+    color: #333;
     padding: 0 10px;
 }
 
 /* Hover effects */
 .activity:hover {
     transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+    box-shadow: #007bff; /* Add a stronger shadow on hover */
 }
 
 .activity:hover img {
@@ -160,7 +160,7 @@ button{
 }
 
 .activity:hover p {
-    color: #333; /* Darken text color on hover */
+    color: #555; /* Darken text color on hover */
 }
 
 #tips {
@@ -200,7 +200,10 @@ button{
 
 .tip:hover {
     transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add a stronger shadow on hover */
+    box-shadow: 0 6px 10px #007bff; /* Add a stronger shadow on hover */
+}
+.tip :hover p {
+    color: #007bff; /* Change title color on hover */
 }
 .home-container {
     display: flex;
@@ -243,7 +246,7 @@ button{
 /* Hover effects */
 .home:hover {
     transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+    box-shadow: 0 6px 15px #007bff; /* Add a stronger shadow on hover */
 }
 
 .home:hover img {
