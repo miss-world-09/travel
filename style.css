@@ -80,6 +80,19 @@ p{
 button{
     align-items: center;
 }
+
+
+#contact-us button:hover {
+    background-color: rgb(70, 228, 228); /* Hover background color */
+    transform: scale(1.1);               /* Slight enlargement on hover */
+}
+
+
+p{
+    text-align: center;
+}
+
+
 #about{
     color: black;
     background-color: aliceblue;
