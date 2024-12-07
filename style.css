@@ -149,7 +149,7 @@ p{
 .activity h3 {
     margin: 10px 0;
     font-size: 1.5rem;
-    color: #007bff;
+    color: black;
 }
 
 .activity p {
@@ -175,7 +175,9 @@ p{
 .activity:hover p {
     color: #555; /* Darken text color on hover */
 }
-
+.activity:hover {
+    color: #007bff; /* Change to desired hover color */
+}
 #tips {
     padding: 20px;
     background-color: #f8f8f8;
