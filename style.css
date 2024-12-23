@@ -1,7 +1,16 @@
 
-body {
+html,body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    background-image: url(bg.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
 }
 #navbar{
     position: absolute;
@@ -21,21 +30,49 @@ button{
     color: black;
     
 }
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li{
+    margin: 0 40px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#navbar ul li a:hover {
+    color: #007bff;             
+}
+
 #maldivess{
     display: flex;
     justify-content: center;    /* Centers the content horizontally */
     align-items: center;       /* Centers the content vertically */
     height: 100vh;             
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     text-align: center;
     flex-direction: column;
-    background-image: url(maldives.jpeg);
-    background-size: cover;
+     /* background-image: url(bg.jpg);  
+     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     filter: opacity(0.9);
     padding: 20PX;
-    margin: 0;
+    margin: 0; 
+*/
 }
 #maldivess h1{
     font-size: 3rem;
@@ -121,8 +158,35 @@ p{
     background-color: aliceblue;
     text-align: center;
 }
+.stay-container{
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+}
+.stay{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    box-sizing: border-box;
+}
+.stay:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+.stay h3{
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #000;
+}
+.stay:hover h3{
+    color: #007bff;
+}
+
 .footer {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     padding: 20px 0;
     text-align: center;
 }
@@ -203,7 +267,7 @@ p{
 }
 #tips {
     padding: 20px;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     text-align: center;
 }
 
@@ -227,7 +291,6 @@ p{
 
 .tip h3 {
     font-size: 1.5rem;
-    color: #333;
     margin-bottom: 10px;
 }
 
@@ -235,10 +298,13 @@ p{
     font-size: 1rem;
     color: #555;
 }
+.tip:hover h3{
+    color: #007bff;
+}
 
 .tip:hover {
     transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 6px 10px #007bff; /* Add a stronger shadow on hover */
+    /*box-shadow: 0 6px 10px #007bff;  Add a stronger shadow on hover */
 }
 .tip :hover p {
     color: #007bff; /* Change title color on hover */
@@ -284,7 +350,7 @@ p{
 /* Hover effects */
 .home:hover {
     transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 6px 15px #007bff; /* Add a stronger shadow on hover */
+    /*box-shadow: 0 6px 15px #007bff;  Add a stronger shadow on hover */
 }
 
 .home:hover img {
