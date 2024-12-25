@@ -318,6 +318,7 @@ p{
     gap: 20px; /* Adds spacing between the cards */
 }
 
+
 .home {
     width: 30%; /* Adjust card width */
     text-align: center;
@@ -326,15 +327,19 @@ p{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for visibility */
     overflow: hidden; /* Ensure border-radius applies to images */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .home img {
     width: 100%; /* Make images responsive */
-    height: auto;
+    height: 200px;
     border-bottom: 2px solid #ddd;
     transition: transform 0.3s ease; /* Image zoom effect on hover */
+    padding: 0px;
+    margin: 0;
+    object-fit: cover;
+    display: block;
 }
 
 .home h3 {
