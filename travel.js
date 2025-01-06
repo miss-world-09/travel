@@ -1,16 +1,37 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script>
-    gsap.registerPlugin(ScrollTrigger);
+    const slider = document.querySelector('.secimg');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-    gsap.from(".fade-in", {
-        scrollTrigger: {
-            trigger: ".fade-in",
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-        },
-        duration: 1,
-        opacity: 0,
-        y: 50
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
     });
-</script>
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; // Adjust scrolling speed
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Optional: Auto-scroll
+    setInterval(() => {
+        slider.scrollLeft += 2; // Adjust scrolling speed
+        if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+            slider.scrollLeft = 0; // Loop back to the beginning
+        }
+    }, 30); // Adjust time interval
